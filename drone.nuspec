@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+	
+	<metadata>
+		<id>drone-cli</id>
+		<tags>drone cli docker</tags>
+		<version>0.5.0-dev</version>
+
+		<owners>Peter Cummuskey</owners>
+		<packageSourceUrl>https://github.com/tzrlk/choco-drone-cli</packageSourceUrl>
+		<requireLicenseAcceptance>true</requireLicenseAcceptance>
+		
+		<title>drone cli (Install)</title>
+		<authors>Brad Rydzewski</authors>
+		<summary>Drone is a Continuous Delivery platform built on Docker, written in Go</summary>
+		<description>
+			Drone is a Continuous Integration platform built on container technology. Every build is executed inside an ephemeral Docker container, giving developers complete control over their build environment with guaranteed isolation.
+		</description>
+
+		<projectUrl>https://github.com/drone/drone</projectUrl>
+		<projectSourceUrl>https://github.com/drone/drone</projectSourceUrl>
+		<docsUrl>http://readme.drone.io/</docsUrl>
+		<bugTrackerUrl>https://github.com/drone/drone/issues</bugTrackerUrl>
+		<mailingListUrl>https://gitter.im/drone/drone</mailingListUrl>
+		<licenseUrl>https://raw.githubusercontent.com/drone/drone/master/LICENSE</licenseUrl>
+		<iconUrl>https://avatars0.githubusercontent.com/u/2181346</iconUrl>
+
+		<dependencies>
+			<dependency id="docker" version="1.13.0" />
+			<dependency id="docker-compose" version="1.10.0" />
+		</dependencies>
+
+  </metadata>
+  
+  <files>
+	<file src="tools\**" target="tools" />
+  </files>
+
+</package>
